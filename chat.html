@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat | Leaf Talk</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body id="chat-screen">
+    <!-- status-bar -->
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>110%</span>
+        <i class="fas fa-battery-full"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+    <!-- status-bar -->
+
+    <!-- header -->
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="chats.html"> <i class="fas fa-angle-left fa-3x"></i></a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">Cute Hamster</h1>
+      </div>
+      <div class="alt-header__column">
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="fas fa-bars fa-lg"></i></span>
+      </div>
+    </header>
+    <!-- header -->
+
+    <!-- user -->
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">
+        Tuesday, June 30, 2020
+      </div>
+      <div class="message-row">
+        <div class="message-row__img">
+          <img
+            src="https://www.peta.org/wp-content/uploads/2016/09/hamster-668x336.jpg"
+          />
+        </div>
+        <div class="message-row__content">
+          <span class="message__author">Cute Hamster</span>
+          <div class="message__info">
+            <span class="message__bubble">Hi!</span>
+            <span class="message__time">21:27</span>
+          </div>
+        </div>
+      </div>
+      <div class="message-row message-row--own">
+          <div class="message__info">
+              <span class="message__bubble">so cute!</span>
+              <span class="message__time">21:27</span>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- user -->
+
+    <form class="reply">
+        <div class="reply__column">
+          <i class="far fa-plus-square fa-lg"></i>
+        </div>
+        <div class="reply__column">
+          <input type="text" placeholder="Write a message..." />
+          <i class="far fa-smile-wink fa-lg"></i>
+          <button>
+            <i class="fas fa-arrow-up"></i>
+          </button>
+        </div>
+      </form>
+      <div id="no-mobile"><span>Your screen is too big...</span></div>
+
+  </body>
+</html>
